@@ -7,27 +7,27 @@ export const Maps = () => {
   const data = [
     {
       id: 1,
-      nama: "Aceh",
+      nama: "Banda Aceh",
       posisi: [4.695135, 96.7493993],
     },
     {
       id: 2,
-      nama: "Palembang",
-      posisi: [-2.9911083, 104.7567333],
-    },
-    {
-      id: 3,
-      nama: "Riau",
+      nama: "Pekanbaru",
       posisi: [-3.3194374, 103.914399],
     },
     {
-      id: 4,
-      nama: "Jakarta",
+      id: 3,
+      nama: "Kemayoran Jakarta",
       posisi: [-6.2088, 106.8456],
     },
     {
+      id: 4,
+      nama: "Sunter Jakarta",
+      posisi: [-6.138415, 106.863956],
+    },
+    {
       id: 5,
-      nama: "Depok",
+      nama: "Depok Antasari",
       posisi: [-6.39, 106.83],
     },
     {
@@ -124,7 +124,7 @@ export const Maps = () => {
             >
               <Popup>{e.nama}</Popup>
             </Marker>
-          )
+          ),
       )}
     </MapContainer>
   );

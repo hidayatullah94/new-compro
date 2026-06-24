@@ -2,88 +2,49 @@ import React, { useState } from "react";
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import {
-  RouteIcon as Road,
-  Settings,
-  FileText,
-  Map,
-  CreditCard,
-  Search,
-  BarChart,
-  Shield,
-  Truck,
-  Users,
-  Building,
-  Lightbulb,
-} from "lucide-react";
+
 export const HoverCard = ({ items, className }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const getIcon = (icon) => {
-    switch (icon) {
-      case "Road":
-        return <Road className="h-10 w-10 text-primary" />;
-      case "Settings":
-        return <Settings className="h-10 w-10 text-primary" />;
-      case "FileText":
-        return <FileText className="h-10 w-10 text-primary" />;
-      case "Map":
-        return <Map className="h-10 w-10 text-primary" />;
-      case "CreditCard":
-        return <CreditCard className="h-10 w-10 text-primary" />;
-      case "Search":
-        return <Search className="h-10 w-10 text-primary" />;
-      case "BarChart":
-        return <BarChart className="h-10 w-10 text-primary" />;
-      case "Shield":
-        return <Shield className="h-10 w-10 text-primary" />;
-      case "Truck":
-        return <Truck className="h-10 w-10 text-primary" />;
-      case "Users":
-        return <Users className="h-10 w-10 text-primary" />;
-      case "Building":
-        return <Building className="h-10 w-10 text-primary" />;
-      case "Lightbulb":
-        return <Lightbulb className="h-10 w-10 text-primary" />;
-      default:
-        return <Road className="h-10 w-10 text-primary" />;
-    }
-  };
+
   return (
     <div
       className={cn(
         "grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3",
-        className
+        className,
       )}
     >
-      {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={idx}
-          className="relative group block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-gray-200  block rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence>
-          <Card>
-            <CardTitle>{getIcon(item.icon)}</CardTitle>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
-        </Link>
-      ))}
+      {items.map((item, idx) => {
+        const Icon = item.icon;
+        return (
+          <Link
+            href={item?.link}
+            key={idx}
+            className="relative group block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-gray-200  block rounded-3xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <Icon className="w-6 h-6 text-sky-500" />
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </Link>
+        );
+      })}
     </div>
   );
 };
@@ -92,7 +53,7 @@ export function Card({ className, children }) {
     <div
       className={cn(
         "rounded-2xl h-full w-full p-4 overflow-hidden bg-slate-50 border  dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-        className
+        className,
       )}
     >
       <div className="relative z-50">
@@ -115,7 +76,7 @@ export function CardDescription({ className, children }) {
     <p
       className={cn(
         "mt-8 text-gray-500 tracking-wide leading-relaxed text-sm",
-        className
+        className,
       )}
     >
       {children}

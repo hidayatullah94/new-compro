@@ -1,6 +1,6 @@
 import React from "react";
 import { HoverCard } from "../component";
-import { Layanan } from "../lib/data";
+import { LayananJLO, LayananTEK, LayananTI } from "../lib/data";
 import { Building2, Cpu, TrafficCone } from "lucide-react";
 import { servis } from "../assets";
 
@@ -51,19 +51,19 @@ export const Servis = () => {
               <h3 className="text-xl font-bold  ps-2 mb-5 flex">
                 Teknologi Informasi <Cpu className="text-rose-700 ms-2" />
               </h3>
-              <HoverCard items={Layanan} />
+              <HoverCard items={LayananTI} />
             </div>
             <div className="">
               <h3 className="text-xl font-bold  ps-2 mb-5 flex">
                 Layanan Jalan TOL <TrafficCone className="text-rose-700 ms-2" />
               </h3>
-              <HoverCard items={Layanan} />
+              <HoverCard items={LayananJLO} />
             </div>
             <div className="">
               <h3 className="text-xl font-bold  ps-2 mb-5 flex">
                 Teknik <Building2 className="text-rose-700 ms-2" />
               </h3>
-              <HoverCard items={Layanan} />
+              <HoverCard items={LayananTEK} />
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 import { ClipText } from "./ClipText";
 import {
-  logo,
+
   P1,
   P10,
   P2,
@@ -22,6 +22,7 @@ import {
   W8,
   W9,
   P4,
+  logoW,
 } from "../assets";
 
 const images1 = [P1, P2, P3, P8, P4, W3, W2, W4];
@@ -30,18 +31,16 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="flex justify-center items-center my-5 flex-wrap  gap-5 ">
-        <ClipText texts={"BUILDING"} images={images1} />
-        <ClipText texts={"SUSTAINABLE"} images={images2} />
+        <ClipText texts={"terus BERTUMBUH"} images={images1} />
+        <ClipText texts={"untuk MAJU"} images={images2} />
       </div>
       <div className="bg-primary text-white">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 ">
             <div>
               <Link to="/" className="mb-4 flex items-center space-x-2">
-                <img src={logo} alt="" className="w-8" />
-                <span className="text-xl font-bold text-white">
-                  PT Citra Persada Infrastruktur
-                </span>
+                <img src={logoW} alt="" className="w-full h-12 sm:h-14 max-w-sm" />
+              
               </Link>
               <p className="mb-6 text-gray-300">
                 Membangun infrastruktur jalan tol berkualitas untuk

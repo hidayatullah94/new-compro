@@ -85,7 +85,7 @@ export const Proyek = () => {
           </div>
           <div className="my-5">
             <EffectCard item={Project} />
-            {show ? <EffectCard item={Project} /> : null}
+            {/* {show ? <EffectCard item={Project} /> : null}
             <div className="mt-8  w-full flex justify-center">
               <button
                 onClick={() => setShow(!show)}
@@ -95,7 +95,7 @@ export const Proyek = () => {
                 {show ? " Lihat Lebih Sedikit Proyek" : "Lihat Semua Proyek"}
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

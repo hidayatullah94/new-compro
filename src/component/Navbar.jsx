@@ -81,19 +81,12 @@ const Navbar = () => {
         <Link to="/" className="flex items-center space-x-2">
           <img
             className={cn(
-              "sm:h-8 sm:w-8 w-5 h-5",
+              "w-full h-5 sm:h-8",
               isScrolled ? "text-primary" : "text-white"
             )}
             src={logo}
           />
-          <span
-            className={cn(
-              "sm:text-xl text-sm font-bold",
-              isScrolled ? "text-primary" : "text-white"
-            )}
-          >
-            Citra Persada Infrastruktur
-          </span>
+   
         </Link>
 
         {/* Desktop Navigation */}

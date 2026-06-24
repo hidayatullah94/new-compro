@@ -1,4 +1,5 @@
-import logo from "./logo_cpi.png";
+import logo from "./logo.png";
+import logoW from "./logoW.png";
 import hero from "./hero.mp4";
 import loker from "./loker.jpg";
 import cisumdau from "./cisumdawu.mp4";
@@ -58,6 +59,7 @@ import pro5 from "./project/5.jpg";
 import servis from "./servis.jpg";
 export {
   logo,
+logoW,
   hero,
   loker,
   cisumdau,

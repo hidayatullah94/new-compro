@@ -1,44 +1,108 @@
+import {
+  Building2,
+  Car,
+  CircleParking,
+  Cog,
+  Construction,
+  DatabaseZap,
+  Handshake,
+  HardHat,
+  MonitorSmartphone,
+  Network,
+  ShieldUser,
+  Target,
+  TractorIcon,
+  TrafficCone,
+} from "lucide-react";
 import { pro1, pro2, pro3, pro4, pro5 } from "../assets";
 
-export const Layanan = [
+//TEKNIK
+export const LayananTEK = [
   {
-    title: "Pembangunan Jalan Tol",
+    title: "Infrastruktur",
     description:
-      "Membangun jalan tol berkualitas tinggi dengan standar keamanan internasional dan teknologi modern.",
-    icon: "Road",
+      "Pembangunan dan pengembangan infrastruktur berkualitas tinggi yang mendukung kelancaran operasional serta pertumbuhan berkelanjutan.",
+    icon: Cog,
   },
   {
-    title: "Operasi & Pemeliharaan",
+    title: "Civil Engineering",
     description:
-      "Mengelola operasional jalan tol sehari-hari dan melakukan pemeliharaan rutin untuk memastikan keamanan dan kenyamanan.",
-    icon: "Settings",
+      "Layanan rekayasa sipil profesional dengan perencanaan matang dan pelaksanaan presisi untuk hasil yang kokoh dan efisien.",
+    icon: HardHat,
   },
   {
-    title: "Konsultasi Teknis",
+    title: "Arsitektur",
     description:
-      "Menyediakan layanan konsultasi teknis untuk proyek infrastruktur jalan dan transportasi.",
-    icon: "FileText",
-  },
-  {
-    title: "Pengembangan Kawasan",
-    description:
-      "Mengembangkan kawasan di sekitar jalan tol untuk mendukung pertumbuhan ekonomi lokal.",
-    icon: "Map",
-  },
-  {
-    title: "Sistem Pembayaran Elektronik",
-    description:
-      "Mengembangkan dan mengelola sistem pembayaran elektronik untuk transaksi tol yang efisien.",
-    icon: "CreditCard",
-  },
-  {
-    title: "Studi Kelayakan",
-    description:
-      "Melakukan studi kelayakan komprehensif untuk proyek infrastruktur jalan baru.",
-    icon: "Search",
+      "Solusi desain arsitektur inovatif yang memadukan fungsi, estetika, dan efisiensi dalam setiap proyek pembangunan.",
+    icon: Building2,
   },
 ];
-
+//TI
+export const LayananTI = [
+  {
+    title: "Front End Solutions",
+    description:
+      "Menghadirkan tampilan sistem yang modern, responsif, dan mudah digunakan untuk meningkatkan pengalaman pengguna.",
+    icon: MonitorSmartphone,
+  },
+  {
+    title: "Back End Solutions",
+    description:
+      "Membangun sistem backend yang kuat, aman, dan stabil sebagai fondasi utama operasional digital perusahaan.",
+    icon: DatabaseZap,
+  },
+  {
+    title: "Operation Management",
+    description:
+      "Sistem operasional terpusat yang memungkinkan monitoring dan pengambilan keputusan secara cepat dan akurat.",
+    icon: Target,
+  },
+  {
+    title: "Parking Service",
+    description:
+      "Layanan sistem parkir modern berbasis teknologi untuk meningkatkan efisiensi, keamanan, dan kenyamanan pengguna.",
+    icon: CircleParking,
+  },
+  {
+    title: "Network & Security",
+    description:
+      "Solusi jaringan yang stabil dan terintegrasi guna memastikan konektivitas tanpa hambatan di seluruh area operasional.",
+    icon: Network,
+  },
+  {
+    title: "Settlement",
+    description:
+      "Layanan sistem pembayaran dan pengelolaan transaksi yang aman, cepat, akurat, serta transparan untuk mendukung kelancaran operasional dan kepercayaan pengguna.",
+    icon: Handshake,
+  },
+];
+//JLO
+export const LayananJLO = [
+  {
+    title: "Tenaga Kerja",
+    description:
+      "Penyediaan tenaga kerja profesional, terlatih, dan siap mendukung operasional jalan tol secara optimal, produktif, serta sesuai standar kerja terbaik.",
+    icon: ShieldUser,
+  },
+  {
+    title: "Landscape Service Jalan Tol",
+    description:
+      "Layanan penataan dan perawatan area hijau jalan tol untuk menciptakan lingkungan yang rapi, aman, nyaman, dan memberikan kesan profesional.",
+    icon: TrafficCone,
+  },
+  {
+    title: "Penyewaan Kendaraan",
+    description:
+      "Menyediakan kendaraan operasional yang handal dan siap pakai untuk menunjang mobilitas kerja secara efisien dan tepat waktu.",
+    icon: Car,
+  },
+  {
+    title: "Scraping & Overlay Jalan Tol",
+    description:
+      "Layanan perbaikan dan pemeliharaan permukaan jalan dengan metode modern guna menjaga kualitas, kenyamanan, dan keamanan pengguna jalan.",
+    icon: Construction,
+  },
+];
 export const Project = [
   {
     title: "Proyek Pekerjaan (SFO) Scrapping, Filling, dan Overlay",

@@ -10,6 +10,7 @@ import {
   Puzzle,
   Target,
   Footprints,
+  SignpostBig,
 } from "lucide-react";
 import {
   CountUp,
@@ -66,7 +67,7 @@ export const Home = () => {
           <div className="flex flex-col items-center text-center">
             <Road className="mb-4 lg:h-10 lg:w-10 w-8 h-8" />
             <h3 className="mb-2 sm:text-2xl text-xl font-bold">
-              <CountUp end={1250} suffix="+" />
+              <CountUp end={1500} suffix="+" />
             </h3>
             <p className="text-lg">Kilometer Jalan Tol</p>
           </div>
@@ -80,16 +81,16 @@ export const Home = () => {
           <div className="flex flex-col items-center text-center">
             <Users className="mb-4 lg:h-10 lg:w-10 w-8 h-8" />
             <h3 className="mb-2 sm:text-2xl text-xl font-bold">
-              <CountUp end={1069} suffix="+" />
+              <CountUp end={2000} suffix="+" />
             </h3>
             <p className="text-lg">Karyawan</p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Award className="mb-4 lg:h-10 lg:w-10 w-8 h-8" />
+            <SignpostBig className="mb-4 lg:h-10 lg:w-10 w-8 h-8" />
             <h3 className="mb-2 sm:text-2xl text-xl font-bold">
-              <CountUp end={23} suffix="+" />
+              <CountUp end={35} suffix="" />
             </h3>
-            <p className="text-lg">Tahun Pengalaman</p>
+            <p className="text-lg">Ruas Jalan Tol</p>
           </div>
         </div>
       </section>
@@ -132,16 +133,32 @@ export const Home = () => {
               </p>
               <div className="flex flex-col justify-start items-start">
                 <p className=" text-gray-500 flex justify-center items-center">
-                  <Target className="text-rose-600 me-2 size-6" /> Visi kami
-                  adalah menjadi Perusahaan Operation and Maintenance Solution
-                  berbasis teknologi
+                  <span className="text-sky-600 font-bold me-5">Visi</span>
+                  <span>
+                    Menjadi perusahaan berbasis teknologi yang terpercaya dan
+                    berkelanjutan, melalui layanan operasional, pemelihara- an,
+                    dan teknik pembangunan yang inovatif dan solutif
+                  </span>
                 </p>
                 <p className="mb-8 flex justify-center items-center text-gray-500">
-                  <Footprints className="text-sky-800 me-2 size-6" /> Misi kami
-                  adalah Berkomitmen dalam mutu dan Pelayanan, serta menjalankan
-                  nilai-nilai Perusahaan
+                  <span className="text-sky-600 font-bold me-5">Misi</span>
+                  <div className="">
+                    <p>
+                      1. Menghadirkan layananbernilai tambah dengan standar mutu
+                      tinggi{" "}
+                    </p>
+                    <p>
+                      2. Mengadopsi inovasi teknologi untuk mendukung
+                      transformasi operasional
+                    </p>
+                    <p>
+                      3. Mengutamakan etika, sinergi tim, dan layanan prima
+                      dalam setiap aspek kerja
+                    </p>
+                  </div>
                 </p>
               </div>
+              <p className="text-sky-600 font-bold"> Nilai Perusahaan</p>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
                 <div className="flex items-center sm:space-x-3 space-x-0">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
